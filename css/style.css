@@ -1,51 +1,26 @@
 /* Reset */
-* { margin:0; padding:0; box-sizing:border-box; }
-body, html { height:100%; font-family:'Roboto', sans-serif; color:#fff; background:#000; overflow-x:hidden; }
-a { text-decoration:none; color:inherit; }
-.container { max-width:1200px; margin:0 auto; padding:0 20px; display:flex; justify-content:space-between; align-items:center; }
-.logo { height:60px; }
-nav a { margin-left:20px; font-weight:500; color:#fff; transition:0.3s; }
-nav a.active, nav a:hover { color:#00ffff; }
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family: 'Roboto', sans-serif; background:#f4f6f8; color:#1e1e1e;}
 
-/* Burger Menu for mobile */
-.burger { display:none; flex-direction:column; cursor:pointer; }
-.burger div { width:25px; height:3px; background:#00ffff; margin:4px 0; }
+/* Container */
+.container {width:90%;max-width:1200px;margin:0 auto;}
 
-/* Slider */
-.hero-slider { position:relative; height:70vh; display:flex; justify-content:center; align-items:center; overflow:hidden; }
-.slides .slide { position:absolute; width:100%; height:100%; background-size:cover; background-position:center; opacity:0; transition:1s; }
-.slides .slide.active { opacity:1; }
-.slide-content { position:absolute; bottom:20%; left:10%; color:#00ffff; text-shadow:0 0 10px #00ffff; }
-.slide-content h1 { font-family:'Orbitron', sans-serif; font-size:3rem; margin-bottom:10px; }
-.slide-content p { font-size:1.2rem; }
+/* Header */
+header {background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);position:sticky;top:0;z-index:100;}
+header .container {display:flex;align-items:center;justify-content:space-between;padding:10px 0;}
+header .logo {height:50px;}
+header nav a {margin:0 15px;text-decoration:none;color:#1e3a8a;font-weight:600;}
+header nav a.active {color:#f59e0b;}
+.burger {display:none;flex-direction:column;cursor:pointer;}
+.burger div {width:25px;height:3px;background:#1e3a8a;margin:4px 0;}
 
-/* Slider Controls */
-.slider-controls { position:absolute; width:100%; display:flex; justify-content:space-between; top:50%; transform:translateY(-50%); padding:0 20px; }
-.slider-controls span { font-size:2rem; cursor:pointer; color:#00ffff; text-shadow:0 0 5px #00ffff; transition:0.3s; }
-.slider-controls span:hover { color:#fff; }
-
-/* Games Section */
-.games { padding:60px 20px; text-align:center; }
-.games h2 { font-family:'Orbitron', sans-serif; font-size:2.5rem; margin-bottom:40px; color:#00ffff; }
-.game-list { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
-.game { background:rgba(0,255,255,0.05); padding:20px; border-radius:10px; width:220px; transition:0.3s; }
-.game:hover { transform:translateY(-10px); box-shadow:0 0 20px #00ffff; }
-.game img { width:100%; border-radius:10px; }
-.playstore-btn img { width:120px; margin-top:10px; transition:0.3s; }
-.playstore-btn:hover img { transform:scale(1.1); }
-
-/* Footer */
-footer { background:#111; padding:20px; text-align:center; }
-footer .social-icons { margin-top:10px; }
-footer .social-icons a img { width:30px; margin:0 10px; filter:invert(100%); transition:0.3s; }
-footer .social-icons a:hover img { filter:invert(40%) sepia(100%) hue-rotate(180deg); }
-
-/* Particle Background */
-#particles-js { position:fixed; width:100%; height:100%; z-index:-1; }
-
-/* Responsive */
-@media(max-width:768px) {
-  nav { display:none; flex-direction:column; background:rgba(0,0,0,0.9); position:absolute; top:100%; left:0; width:100%; }
-  nav a { margin:10px 0; }
-  .burger { display:flex; }
-}
+/* Hero Slider */
+.hero-slider {position:relative;overflow:hidden;height:70vh;margin-top:10px;}
+.hero-slider .slides {position:relative;width:100%;height:100%;}
+.hero-slider .slide {position:absolute;width:100%;height:100%;background-size:cover;background-position:center;opacity:0;transition:opacity 1s ease;}
+.hero-slider .slide.active {opacity:1;}
+.hero-slider .slide-content {position:absolute;bottom:50px;left:50px;color:#fff;}
+.hero-slider .slide-content h1 {font-family:'Poppins', sans-serif;font-size:48px;margin-bottom:15px;text-shadow:2px 2px 5px rgba(0,0,0,0.5);}
+.playstore-btn img {height:60px;transition:transform 0.3s ease;}
+.playstore-btn:hover img {transform:scale(1.1);}
+.slider-controls {position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;color:#fff;font-size:50px
