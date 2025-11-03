@@ -1,3 +1,12 @@
+// Burger Menu
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('nav');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
+// Slider
 let slides = document.querySelectorAll('.slide');
 let current = 0;
 const nextBtn = document.querySelector('.next');
@@ -8,7 +17,7 @@ function showSlide(index){
   slides[index].classList.add('active');
 }
 
-// Initialize first slide
+// Initialize
 showSlide(current);
 
 nextBtn.addEventListener('click', () => {
