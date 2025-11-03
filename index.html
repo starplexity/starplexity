@@ -5,31 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Starsgame</title>
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="particles-js"></div>
+
 <header>
   <div class="container">
     <img src="images/logo.png" alt="Starsgame Logo" class="logo">
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="privacy-policy.html">Privacy Policy</a>
     </nav>
     <div class="burger">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div></div><div></div><div></div>
     </div>
   </div>
 </header>
 
 <section class="hero-slider">
   <div class="slides">
-    <div class="slide active" style="background-image: url('images/slider1.png');"></div>
-    <div class="slide" style="background-image: url('images/slider2.png');"></div>
-    <div class="slide" style="background-image: url('images/slider3.png');"></div>
+    <div class="slide active" style="background-image: url('images/slider1.png');">
+      <div class="slide-content">
+        <h1>Play the Ultimate Games</h1>
+        <p>Adventure and fun for all ages</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/slider2.png');">
+      <div class="slide-content">
+        <h1>New Levels, New Challenges</h1>
+        <p>Test your skills and beat high scores</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/slider3.png');">
+      <div class="slide-content">
+        <h1>Fun for Everyone</h1>
+        <p>Games for kids and adults</p>
+      </div>
+    </div>
   </div>
   <div class="slider-controls">
     <span class="prev">&#10094;</span>
@@ -64,9 +79,17 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Starsgame. All rights reserved.</p>
+  <div class="container-footer">
+    <p>&copy; 2025 Starsgame. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+  </div>
 </footer>
 
+<script src="js/particles.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
