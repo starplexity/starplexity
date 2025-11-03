@@ -1,53 +1,34 @@
-/* Reset & Fonts */
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins', sans-serif;background:#f0f4f8;position:relative;overflow-x:hidden;}
-.container{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:20px;}
-
-/* Header */
-header{position:fixed;width:100%;top:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05);z-index:100;}
-header .logo{height:50px;}
-header nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:600;}
-.burger{display:none;flex-direction:column;cursor:pointer;}
-.burger div{width:25px;height:3px;background:#333;margin:4px 0;}
-
-/* Animated Background */
-.animated-bg{
-  position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;
-  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  animation:bgmove 20s linear infinite;
-}
-@keyframes bgmove{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
+.hero-slider{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto 50px;
+  height: 400px; /* fixed height */
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-/* Slider */
-.hero-slider{position:relative;max-width:1200px;margin:100px auto 50px;overflow:hidden;border-radius:10px;}
-.slides{display:flex;transition:transform 0.5s ease;}
-.slide{min-width:100%;display:flex;justify-content:center;}
-.slide img{width:100%;border-radius:10px;}
-.slider-controls{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;transform:translateY(-50%);}
-.slider-controls span{font-size:30px;color:#fff;cursor:pointer;user-select:none;padding:0 15px;}
+.slides{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-/* Games */
-.games{padding:50px 20px;text-align:center;}
-.games h2{font-size:36px;margin-bottom:40px;color:#333;}
-.game-list{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
-.game{background:#fff;padding:20px;border-radius:10px;width:250px;transition:transform 0.3s ease, box-shadow 0.3s ease;}
-.game:hover{transform:translateY(-10px);box-shadow:0 10px 20px rgba(0,0,0,0.1);}
-.game img{width:100%;border-radius:10px;margin-bottom:15px;}
-.game h3{margin-bottom:10px;}
-.playstore-btn img{height:40px;transition:transform 0.3s ease;}
-.playstore-btn:hover img{transform:scale(1.1);}
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
 
-/* Footer */
-footer{background:#1e3a8a;color:#fff;text-align:center;padding:20px 0;}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-/* Responsive */
-@media(max-width:768px){
-  .burger{display:flex;}
-  header nav{display:none;}
-  .slides img{height:auto;}
-  .game-list{flex-direction:column;align-items:center;}
+.slide.active{
+  display: block;
 }
