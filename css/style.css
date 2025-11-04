@@ -1,0 +1,136 @@
+/* Custom CSS for Game.Studio Theme */
+:root {
+    --brand-navy: #0D47A1;
+    --brand-gold: #FFC107;
+    --primary-text: #333333;
+    --light-bg: #F7F7F7;
+}
+
+/* Core Styles */
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+
+/* Call to Action Link/Image Hover Style */
+.cta-button {
+    transition: all 0.3s ease-out;
+    display: inline-block;
+}
+.cta-button:hover {
+    transform: scale(1.05);
+    filter: brightness(0.95);
+}
+
+/* Game Card Styles (for Horizontal Slider) */
+.game-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    border: 1px solid #E0E0E0;
+    flex: 0 0 auto; /* Prevents cards from growing/shrinking */
+    width: 300px;
+    position: relative; 
+}
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--brand-navy);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(13, 71, 161, 0.1); 
+    z-index: 10;
+}
+
+/* Play Store Button Size Increase on Card */
+.game-card .cta-button img {
+    width: 144px; /* Increased size */
+    height: auto;
+    max-width: none; 
+}
+
+/* Horizontal Slider Container */
+.game-slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding-bottom: 1rem; 
+    padding-top: 10px; 
+}
+.game-slider-container::-webkit-scrollbar {
+    height: 8px;
+}
+.game-slider-container::-webkit-scrollbar-thumb {
+    background: var(--brand-navy);
+    border-radius: 10px;
+}
+.game-slider-container::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+
+/* Slider Arrows Visibility on Section Hover */
+.slider-wrapper {
+    position: relative;
+}
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(13, 71, 161, 0.8); 
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    opacity: 0; /* HIDDEN BY DEFAULT */
+    pointer-events: none; /* Prevents clicks when hidden */
+    transition: opacity 0.3s, background 0.3s;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* Show arrows ONLY when hovering over the main portfolio section */
+.portfolio-section:hover .slider-arrow {
+    opacity: 1;
+    pointer-events: auto;
+}
+.slider-arrow:hover {
+    background: var(--brand-navy);
+}
+.arrow-left {
+    left: 1rem;
+}
+.arrow-right {
+    right: 1rem;
+}
+
+
+/* Footer Navigation Link Styling */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--brand-gold);
+    transition: all 0.3s ease-out;
+    transform: translateX(-50%);
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.nav-link.active {
+    font-weight: 700;
+    color: var(--brand-navy);
+}
+.nav-link.active::after {
+    width: 100%;
+}

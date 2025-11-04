@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Game.Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body class="bg-white text-primary-text min-h-screen">
+    
+    <header class="bg-white py-4 shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="text-3xl font-extrabold text-brand-navy tracking-tight logo-link">Game<span class="text-brand-gold">.Studio</span></a>
+        </div>
+    </header>
+    
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <section class="mt-8">
+            <h2 class="text-5xl font-extrabold text-brand-navy mb-12 text-center">Let's Build Something Great</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-brand-navy">
+                    <h3 class="text-2xl font-semibold mb-6 text-brand-navy">Send a Partnership Inquiry</h3>
+                    <form action="YOUR_FORMSPREE_ENDPOINT" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-brand-navy focus:ring-brand-navy p-3 bg-gray-50">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                            <input type="email" id="email" name="_replyto" required class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-brand-navy focus:ring-brand-navy p-3 bg-gray-50">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Project Details / Message</label>
+                            <textarea id="message" name="message" rows="5" required class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-brand-navy focus:ring-brand-navy p-3 bg-gray-50"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-navy text-white py-3 rounded-lg font-bold text-lg cta-button">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="space-y-6 pt-4">
+                    <div class="p-6 rounded-xl bg-light-bg shadow-md border-l-4 border-brand-gold">
+                        <h4 class="text-xl font-semibold mb-2 text-brand-navy">Business & Press</h4>
+                        <p class="text-gray-700">business@gamestudio.com</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-light-bg shadow-md border-l-4 border-brand-gold">
+                        <h4 class="text-xl font-semibold mb-2 text-brand-navy">Player Support</h4>
+                        <p class="text-gray-700">support@gamestudio.com</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-light-bg shadow-md border-l-4 border-brand-gold">
+                        <h4 class="text-xl font-semibold mb-2 text-brand-navy">Headquarters</h4>
+                        <p class="text-gray-700">101 GameDev Tower, 5th Floor<br>Innovators' Hub, NY 10001</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-light-bg border-t border-gray-200 mt-16 py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <div class="mb-4">
+                <a href="index.html" class="text-2xl font-extrabold text-brand-navy tracking-tight logo-link">Game<span class="text-brand-gold">.Studio</span></a>
+            </div>
+            <p>&copy; 2025 Game.Studio. All trademarks are the property of their respective owners.</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-brand-navy">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-brand-navy">About Us</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-brand-navy active">Contact Us</a>
+                <a href="privacy-policy.html" class="nav-link text-gray-600 hover:text-brand-navy">Legal Terms</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

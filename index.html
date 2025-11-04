@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Game Company – Premium Mobile Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body class="bg-white text-primary-text min-h-screen">
+    
+    <header class="bg-white py-4 shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="text-3xl font-extrabold text-brand-navy tracking-tight logo-link">Game<span class="text-brand-gold">.Studio</span></a>
+        </div>
+    </header>
+    
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <header class="text-center pt-8 pb-12">
+            <p class="text-lg text-brand-navy font-semibold mb-4 uppercase tracking-widest">
+                Pioneering Mobile Gaming Quality
+            </p>
+            <h1 class="text-6xl md:text-7xl font-extrabold text-primary-text leading-tight mb-8">
+                Crafting <span class="text-brand-navy">Premium Experiences</span> for the Global Stage.
+            </h1>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-10">
+                We combine world-class design, robust engineering, and meticulous polish to deliver mobile titles that define their genre and captivate millions.
+            </p>
+            <a href="YOUR_FEATURED_GAME_LINK" target="_blank" class="cta-button">
+                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="w-48">
+            </a>
+        </header>
+        
+        <section class="relative bg-light-bg p-8 rounded-xl shadow-inner border border-gray-100 mt-12 portfolio-section">
+            <h2 class="text-4xl font-bold text-center text-brand-navy mb-10 border-b-4 border-brand-gold/50 inline-block px-4 pb-2">Our Portfolio</h2>
+            
+            <div class="slider-wrapper">
+                
+                <button id="scrollLeft" class="slider-arrow arrow-left hidden md:flex" aria-label="Scroll Left">
+                    &#10094; 
+                </button>
+
+                <div class="game-slider-container" id="gameSlider">
+                    
+                    <div class="game-card rounded-xl bg-white shadow-lg">
+                        <img src="https://placehold.co/400x250/0D47A1/FFFFFF?text=TITLE+ALPHA" alt="Game Title Alpha" class="rounded-t-xl mb-4 w-full h-48 object-cover border-b border-gray-200" onerror="this.onerror=null; this.src='https://placehold.co/400x250/0D47A1/FFFFFF?text=Image+Error';">
+                        <div class="p-5 text-center">
+                            <h3 class="text-2xl font-semibold mb-2 text-brand-navy">Title Alpha: Strategy</h3>
+                            <p class="text-gray-500 mb-4 h-16">A critically acclaimed real-time strategy game with millions of active users worldwide.</p>
+                            <a href="YOUR_PLAYSTORE_LINK_1" target="_blank" class="inline-block cta-button">
+                                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card rounded-xl bg-white shadow-lg">
+                        <img src="https://placehold.co/400x250/FFC107/333333?text=TITLE+BETA" alt="Game Title Beta" class="rounded-t-xl mb-4 w-full h-48 object-cover border-b border-gray-200" onerror="this.onerror=null; this.src='https://placehold.co/400x250/FFC107/333333?text=Image+Error';">
+                        <div class="p-5 text-center">
+                            <h3 class="text-2xl font-semibold mb-2 text-brand-navy">Title Beta: Puzzle</h3>
+                            <p class="text-gray-500 mb-4 h-16">The gold standard in casual physics-based puzzle solving. Highly addictive and visually rich.</p>
+                            <a href="YOUR_PLAYSTORE_LINK_2" target="_blank" class="inline-block cta-button">
+                                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card rounded-xl bg-white shadow-lg">
+                        <img src="https://placehold.co/400x250/333333/FFFFFF?text=TITLE+GAMMA" alt="Game Title Gamma" class="rounded-t-xl mb-4 w-full h-48 object-cover border-b border-gray-200" onerror="this.onerror=null; this.src='https://placehold.co/400x250/333333/FFFFFF?text=Image+Error';">
+                        <div class="p-5 text-center">
+                            <h3 class="text-2xl font-semibold mb-2 text-brand-navy">Title Gamma: RPG</h3>
+                            <p class="text-gray-500 mb-4 h-16">An immersive single-player RPG experience with cinematic storytelling and touch-optimized controls.</p>
+                            <a href="YOUR_PLAYSTORE_LINK_3" target="_blank" class="inline-block cta-button">
+                                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card rounded-xl bg-white shadow-lg">
+                        <img src="https://placehold.co/400x250/0D47A1/FFFFFF?text=TITLE+DELTA" alt="Game Title Delta" class="rounded-t-xl mb-4 w-full h-48 object-cover border-b border-gray-200" onerror="this.onerror=null; this.src='https://placehold.co/400x250/0D47A1/FFFFFF?text=Image+Error';">
+                        <div class="p-5 text-center">
+                            <h3 class="text-2xl font-semibold mb-2 text-brand-navy">Title Delta: Arcade</h3>
+                            <p class="text-gray-500 mb-4 h-16">Retro arcade fun redefined for modern mobiles, featuring vibrant pixel art and competitive scoring.</p>
+                            <a href="YOUR_PLAYSTORE_LINK_4" target="_blank" class="inline-block cta-button">
+                                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card rounded-xl bg-white shadow-lg">
+                        <img src="https://placehold.co/400x250/FFC107/333333?text=TITLE+EPSILON" alt="Game Title Epsilon" class="rounded-t-xl mb-4 w-full h-48 object-cover border-b border-gray-200" onerror="this.onerror=null; this.src='https://placehold.co/400x250/FFC107/333333?text=Image+Error';">
+                        <div class="p-5 text-center">
+                            <h3 class="text-2xl font-semibold mb-2 text-brand-navy">Title Epsilon: Racing</h3>
+                            <p class="text-gray-500 mb-4 h-16">High-speed, realistic racing simulation built exclusively for mobile devices.</p>
+                            <a href="YOUR_PLAYSTORE_LINK_5" target="_blank" class="inline-block cta-button">
+                                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card rounded-xl bg-white shadow-lg">
+                        <img src="https://placehold.co/400x250/333333/FFFFFF?text=TITLE+ZETA" alt="Game Title Zeta" class="rounded-t-xl mb-4 w-full h-48 object-cover border-b border-gray-200" onerror="this.onerror=null; this.src='https://placehold.co/400x250/333333/FFFFFF?text=Image+Error';">
+                        <div class="p-5 text-center">
+                            <h3 class="text-2xl font-semibold mb-2 text-brand-navy">Title Zeta: MMO</h3>
+                            <p class="text-gray-500 mb-4 h-16">Massively Multiplayer Online game with thousands of concurrent players and deep crafting systems.</p>
+                            <a href="YOUR_PLAYSTORE_LINK_6" target="_blank" class="inline-block cta-button">
+                                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="mx-auto">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="scrollRight" class="slider-arrow arrow-right hidden md:flex" aria-label="Scroll Right">
+                    &#10095;
+                </button>
+            </div>
+        </section>
+        
+        <section class="mt-16 bg-brand-navy/90 p-12 rounded-xl text-center shadow-2xl">
+            <h2 class="text-4xl font-extrabold text-white mb-4">Ready to play our latest hit?</h2>
+            <p class="text-xl text-brand-gold mb-8">Download **Title Alpha** today and join millions of players globally.</p>
+            <a href="YOUR_FEATURED_GAME_LINK" target="_blank" class="cta-button transform transition duration-300 hover:scale-105">
+                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" class="w-48 mx-auto">
+            </a>
+        </section>
+
+    </main>
+    
+    <footer class="bg-light-bg border-t border-gray-200 mt-16 py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <div class="mb-4">
+                <a href="index.html" class="text-2xl font-extrabold text-brand-navy tracking-tight logo-link">Game<span class="text-brand-gold">.Studio</span></a>
+            </div>
+            <p>&copy; 2025 Game.Studio. All trademarks are the property of their respective owners.</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-brand-navy active">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-brand-navy">About Us</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-brand-navy">Contact Us</a>
+                <a href="privacy-policy.html" class="nav-link text-gray-600 hover:text-brand-navy">Legal Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
